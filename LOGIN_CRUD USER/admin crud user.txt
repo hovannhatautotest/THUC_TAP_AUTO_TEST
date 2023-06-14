@@ -1,0 +1,74 @@
+1. Test case mặc định, điền đầy đủ thông tin hợp lệ, kết quả trả về là tạo thành công một user mới.
+Input:
+- Full Name: Nguyễn Văn A
+- Email: vanan@gmail.com
+- Password: 123456
+- Retype Password: 123456
+- Số điện thoại: 0987654321
+- Date of birth: 01-01-1990
+- Position: Developer
+- Start Date: 01-01-2022
+- Role: User
+Output:
+- Tạo thành công một user mới.
+2. Test case nhập thiếu thông tin, kết quả trả về là thông báo lỗi yêu cầu nhập đầy đủ thông tin.
+Input:
+- Full Name: Nguyễn Văn A
+- Email: vanan@gmail.com
+- Password: 123456
+- Số điện thoại: 0987654321
+- Date of birth: 01-01-1990
+- Position: Developer
+- Start Date: 01-01-2022
+- Role: User
+Output:
+- Thông báo lỗi yêu cầu nhập đầy đủ thông tin.
+3. Test case Password và Retype Password không trùng khớp, kết quả trả về là thông báo lỗi yêu cầu nhập lại mật khẩu xác nhận đúng.
+Input:
+- Full Name: Nguyễn Văn A
+- Email: vanan@gmail.com
+- Password: 123456
+- Retype Password: 123
+- Số điện thoại: 0987654321
+- Date of birth: 01-01-1990
+- Position: Developer
+- Start Date: 01-01-2022
+- Role: User
+Output:
+- Thông báo lỗi yêu cầu nhập lại mật khẩu xác nhận đúng.
+4. Test case Email đã tồn tại trong hệ thống, kết quả trả về là thông báo lỗi yêu cầu nhập email khác.
+Input:
+- Full Name: Nguyễn Văn A
+- Email: user1@gmail.com (Email này đã tồn tại trong hệ thống)
+- Password: 123456
+- Retype Password: 123456
+- Số điện thoại: 0987654321
+- Date of birth: 01-01-1990
+- Position: Developer
+- Start Date: 01-01-2022
+- Role: User
+Output:
+- Thông báo lỗi yêu cầu nhập email khác.
+5. Test case nhập sai định dạng ngày tháng, kết quả trả về là thông báo lỗi yêu cầu nhập đúng định dạng ngày tháng.
+Input:
+- Full Name: Nguyễn Văn A
+- Email: vanan@gmail.com
+- Password: 123456
+- Retype Password: 123456
+- Số điện thoại: 0987654321
+- Date of birth: invalid format (Ví dụ: 30-02-2000)
+- Position: Developer
+- Start Date: 01-01-2022
+- Role: User
+Output:
+- Thông báo lỗi yêu cầu nhập đúng định dạng ngày tháng.
+
+
+1. Khi tạo user mới, hệ thống yêu cầu nhập đầy đủ thông tin bắt buộc, bao gồm: Họ và tên, Email, Mật khẩu, Nhập lại mật khẩu, Số điện thoại, Ngày tháng năm sinh, Vị trí làm việc, Ngày bắt đầu làm việc và Vai trò.
+Khi nhập định dạng email không hợp lệ hoặc không nhập email, hệ thống bắt buộc hiển thị thông báo lỗi và không cho phép tạo user mới.
+2. Khi nhập định dạng số điện thoại không hợp lệ hoặc không nhập số điện thoại, hệ thống bắt buộc hiển thị thông báo lỗi và không cho phép tạo user mới.
+3. Khi nhập định dạng ngày tháng không hợp lệ hoặc không nhập ngày tháng, hệ thống bắt buộc hiển thị thông báo lỗi và không cho phép tạo user mới.
+4. Khi mật khẩu và nhập lại mật khẩu không khớp, hệ thống bắt buộc hiển thị thông báo lỗi và không cho phép tạo user mới.
+5. Khi tên đầy đủ, vị trí làm việc và vai trò được nhập vào đúng định dạng, hệ thống thực hiện tạo user mới thành công và hiển thị thông báo thành công.
+6. Thực hiện kiểm tra tính toàn vẹn của dữ liệu khi tạo user mới: Các trường dữ liệu: Họ và tên, Email, Mật khẩu, Số điện thoại, Ngày tháng năm sinh, Vị trí làm việc, Ngày bắt đầu làm việc và Vai trò được lưu và hiển thị đúng sau khi tạo user mới.
+7. Kiểm tra tính duy nhất của email: Nếu sử dụng email đã có sẵn, hệ thống bắt buộc hiển thị thông báo lỗi và không cho phép tạo user mới.

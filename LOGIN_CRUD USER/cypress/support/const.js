@@ -1,0 +1,9 @@
+export const fullname = "LÊ QUANG ĐOÀN";
+export const email = "lequangdoan@gmail.com";
+export const password = "Nhat@01101999";
+export const retype_password = "Nhat@01101999";
+export const sdt = "0941225408";
+export const date_of_birth = "02-10-1999";
+export const position = "Tester";
+export const start_date = "05-06-2023";
+export const role = "Staff";
